@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giorgia Tavarilli</title>
+    <link rel="icon" href="media/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!--NAV BAR-->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#Hero"><img src="media/logo.png" alt="logo" height="60px"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#AboutMe" class="nav-item">ABOUT</a></li> <!--non funziona TT-->
+                    <li><a href="#MyWorks" class="nav-item">MY WORKS</a></li>
+                    <li><a href="#Contacts" class="nav-item">CONTACTS</a></li>
+                    <li><a href="#" class="nav-item">CV</a></li> <!--apri pdf in altra scheda-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--HERO-->
+    <section class="hero">
+        <a id="Hero" class="anchors"></a>
+        <div class="container hero-content" id="AboutMe">
+            <div class="hero-image"><img src="media/profile.png" alt="profile picture" height="400px"></div>
+            <div class="hero-description">
+                <h1>Hi!<br>I'm Giorgia.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quis explicabo quasi 
+                nam molestiae nostrum nemo temporibus nesciunt, reprehenderit, necessitatibus suscipit
+                fugit minus quibusdam ipsa laborum modi blanditiis eum dicta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT ME-->
+    <section>
+        <a id="AboutMe" class="anchors"></a>
+        <div class="container about-container">
+            <h2>WHAT I ENJOY</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <img class="about-photo" src="media/travel.jpg" alt="travel">
+                    <p class="label">Travel</p>
+                </div>
+                <div class="about-item">
+                    <img class="about-photo" src="media/volunteering.jpg" alt="#">
+                    <p class="label">Music</p>
+                </div>
+                <div class="about-item">
+                    <img class="about-photo" src="media/nice books.jpg" alt="#">
+                    <p class="label">Learn languages</p>
+                </div>
+                <div class="about-item">
+                    <img class="about-photo" src="media/travel.jpg" alt="#">
+                    <p class="label">Knit&amp;Crochet</p>
+                </div>
+                <div class="about-item">
+                    <img class="about-photo" src="media/volunteering.jpg" alt="#">
+                <p class="label">Volunteering</p>
+                </div>
+                <div class="about-item">
+                    <img class="about-photo" src="media/nice books.jpg" alt="#">
+                    <p class="label">Nice books</p>
+                </div>
+            </div>
+            
+            <button class="playlist-button">Ultimate get-to-know-me playlist
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16" fill="none">
+                <path d="M11 8L2.54292e-07 16L9.53674e-07 -4.80825e-07L11 8Z" fill="#FFEAFA"/>
+                </svg>
+            </button>
+
+        </div>
+    </section>
+
+    <!--MY WORKS-->
+    <section>
+        <a id="MyWorks" class="anchors"></a>
+        <div class="container works-container">
+            <h2>WHAT I CAN DO</h2>
+            <div class="skills-content">
+                <img class="skill-icon" src="media/figma.png" alt="Figma">
+                <img class="skill-icon" src="media/html5.png" alt="HTML-5"> <!--source pixabay-->
+                <img class="skill-icon" src="media/css.png" alt="CSS"> <!--source pixabay-->
+            </div>
+            <h3>here you are some works</h3>
+            <div class="work-content">
+                <div class="works-item">
+                    <a href="#"><img class="works-photo" src="media/case study alpro.jpg"></a>
+                    <a class="label" href="#">UX/UI case study - Alpro</a>
+                </div>
+                <div class="works-item">
+                    <a href="#"><img class="works-photo" src="media/case study alpro.jpg"></a>
+                    <a class="label" href="#">UX/UI case study - yarn store</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CONTACTS-->
+    <section>
+        <a id="Contacts" class="anchors"></a>
+        <div class="container contacts-container">
+            <h2>GET IN TOUCH WITH ME!</h2>
+            <div class="contacts-content">
+                <div class="contacts-content-form">
+                    <h3>you can use this form below</h3>
+                    <form action="">
+                        <label class="form-label" for="">Full name</label>
+                        <input class="input-field" type="text" placeholder="Name Surname">
+
+                        <label class="form-label" for="">E-mail</label>
+                        <input class="input-field" type="email" placeholder="example@email.com">
+
+                        <label class="form-label" for="">Message</label>
+                        <textarea class="input-textarea" placeholder="Write here"></textarea>
+
+                        <button class="form-button">Send</button>
+                    </form>
+                    
+                </div>
+                <div class="contacts-content-social">
+                    <h3>and follow me on social medias</h3>
+                    <div class="social-content">
+                        <a href="https://www.linkedin.com/in/giorgiatavarilli"><img class="social-icon" src="media/linkedin.png" alt="linkedin profile"></a> <!--source flaticon-->
+                        <a href="#"><img class="social-icon" src="media/facebook.png" alt="facebook profile"></a> <!--source flaticon-->
+                        <a href="https://instagram.com/gio_tava?igshid=OGQ5ZDc2ODk2ZA=="><img class="social-icon" src="media/instagram.png" alt="instagram profile"></a> <!--source flaticon-->
+                        <a href="#"><img class="social-icon" src="media/behance.png" alt="behance profile"></a> <!--source flaticon-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="index.html#AboutMe">Back to top</a>
+        </div>
+    </footer>
+  </body>
