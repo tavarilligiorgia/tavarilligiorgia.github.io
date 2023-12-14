@@ -2,6 +2,7 @@
  box-sizing: border-box;   
  margin: 0;
  padding: 0;
+ scroll-behavior: smooth;
 }
 
 body {
@@ -70,7 +71,7 @@ a:hover {
 .anchors {
     visibility: hidden;
     position: relative;
-    top: -70px;
+    top: -90px;
 }
 
 /* HEADER */
@@ -151,7 +152,7 @@ a:hover {
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about-item {
@@ -159,7 +160,7 @@ a:hover {
     max-width: 370px;
     max-height: 280px;
     margin-top: 16px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +190,7 @@ a:hover {
 .playlist-button:hover {
     background-color: #089CC0;
     color: #FFEAFA;
+    cursor: pointer;
 }
 
 svg {
@@ -341,6 +343,7 @@ svg {
     max-width: 60px;
     max-height: 60px;
     margin: 8px 16px;
+    border-radius: 20px;
 }
 
 /*FOOTER*/
