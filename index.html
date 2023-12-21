@@ -9,28 +9,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!--icon library--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta property="og:title" content="Giorgia Tavarilli - portfolio">
     <meta property="og:type" content="portfolio">
     <meta property="og:img" content="media/logo.png">
     <meta property="og:url" content="https://tavarilligiorgia.github.io/">
-  </head>
+</head>
 
   <body>
 
-    <!--NAV BAR-->
-    <header class="header">
+    <!--NAVIGATION-->
+    <header class="header desktop-navmenu">
         <div class="container header-container">
             <div class="logo">
                 <a href="#Hero"><img src="media/logo.png" alt="logo" height="60px"></a>
             </div>
-            <nav class="menu">
+            <nav class="navbar" role="navigation">
                 <ul>
-                    <li><a href="#AboutMe" class="nav-item">ABOUT</a></li> <!--non funziona TT-->
-                    <li><a href="#MyWorks" class="nav-item">MY WORKS</a></li>
-                    <li><a href="#Contacts" class="nav-item">CONTACTS</a></li>
-                    <li><a href="cv.html" class="nav-item">CV</a></li> <!--apri pdf in altra scheda-->
+                    <li><a href="#AboutMe" class="navitem">ABOUT</a></li>
+                    <li><a href="#MyWorks" class="navitem">MY WORKS</a></li>
+                    <li><a href="#Contacts" class="navitem">CONTACTS</a></li>
+                    <li><a href="cv.html" class="navitem">CV</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--NAVIGATION MOBILE-->
+    <!--    Made by Erik Terwan 24th of November 2015   -->
+    <header class="header mobile-navmenu">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#Hero"><img src="media/logo.png" alt="logo" height="60px"></a>
+            </div>
+            <nav class="navbar" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <ul id="menu">
+                        <li><a href="#AboutMe" class="navitem">ABOUT</a></li>
+                        <li><a href="#MyWorks" class="navitem">MY WORKS</a></li>
+                        <li><a href="#Contacts" class="navitem">CONTACTS</a></li>
+                        <li><a href="cv.html" class="navitem">CV</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -39,12 +67,15 @@
     <section class="hero">
         <a id="Hero" class="anchors"></a>
         <div class="container hero-content">
-            <div class="hero-image"><img src="media/profile.png" alt="profile picture" height="400px"></div>
+            <div class="hero-image"><img src="media/propic.jpg" alt="profile picture"></div>
             <div class="hero-description">
                 <h1>Hi!<br>I'm Giorgia.</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quis explicabo quasi 
-                nam molestiae nostrum nemo temporibus nesciunt, reprehenderit, necessitatibus suscipit
-                fugit minus quibusdam ipsa laborum modi blanditiis eum dicta.</p>
+                <p>I'm a young Italian woman with diverse interests.
+                    I approached UX design in 2021 as it is the perfect mix of
+                    creativity and logic for me. I'm pursuing this career
+                    with the intent of making digital products more accessible to all!
+                    <br> Currently based in Bari.
+                </p>
             </div>
         </div>
     </section>
@@ -54,35 +85,84 @@
         <a id="AboutMe" class="anchors"></a>
         <div class="container about-container">
             <h2>WHAT I ENJOY</h2>
-            <div class="about-content">
+            <div class="about-content-desktop">
                 <div class="about-item">
                     <img class="about-photo" src="media/travel.jpg" alt="discover new places">
                     <p class="label">Discover new places</p>
                 </div>
                 <div class="about-item">
-                    <img class="about-photo" src="media/nice books.jpg" alt="#">
+                    <img class="about-photo" src="media/nice books.jpg" alt="learn languages">
                     <p class="label">Learn languages</p>
                 </div>
                 <div class="about-item">
-                    <img class="about-photo" src="media/travel.jpg" alt="#">
+                    <img class="about-photo" src="media/travel.jpg" alt="knit and crochet">
                     <p class="label">Knit&amp;Crochet</p>
                 </div>
                 <div class="about-item">
-                    <img class="about-photo" src="media/volunteering.jpg" alt="#">
+                    <img class="about-photo" src="media/volunteering.jpg" alt="volunteering">
                 <p class="label">Volunteering</p>
                 </div>
                 <div class="about-item">
-                    <img class="about-photo" src="media/nice books.jpg" alt="#">
+                    <img class="about-photo" src="media/nice books.jpg" alt="nice books">
                     <p class="label">Nice books</p>
                 </div>
             </div>
-            
-            <a href="https://open.spotify.com/playlist/0AYMF22RsDEzfxoToVXVOg?si=6OQui_AoRmO-Dp9Ik4Nw9A" target="_blank"><button class="playlist-button">Ultimate get-to-know-me playlist
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16" fill="none">
-                <path d="M11 8L2.54292e-07 16L9.53674e-07 -4.80825e-07L11 8Z" fill="#FFEAFA"/>
-                </svg>
-            </button></a>
+            <!--TABLET & MOBILE DISPLAY-->
+            <div id="carouselAbout" class="carousel slide">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div>
+                  <div class="carousel-item active">
+                    <img src="media/travel.jpg" class="carousel-photo" alt="travel">
+                    <div class="carousel-caption">
+                      <p>Discover new places</p>
+                    </div>
+                  </div>
 
+                  <div class="carousel-item">
+                    <img src="media/nice books.jpg" class="carousel-photo" alt="learn languages">
+                    <div class="carousel-caption">
+                      <p>Learn languages</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="media/travel.jpg" class="carousel-photo" alt="nice books">
+                    <div class="carousel-caption">
+                      <p>Knit&amp;Crochet</p>
+                    </div>
+                  </div>
+
+
+                  <div class="carousel-item">
+                    <img src="media/volunteering.jpg" class="carousel-photo" alt="volunteering">
+                    <div class="carousel-caption">
+                      <p>Volunteering</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="media/nice books.jpg" class="carousel-photo" alt="nice books">
+                    <div class="carousel-caption">
+                      <p>Nice books</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            <a href="https://open.spotify.com/playlist/0AYMF22RsDEzfxoToVXVOg?si=6OQui_AoRmO-Dp9Ik4Nw9A" target="_blank">
+                <button class="playlist-button">Ultimate get-to-know-me playlist
+                    <svg id="play" xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16" fill="none">
+                    <path d="M11 8L2.54292e-07 16L9.53674e-07 -4.80825e-07L11 8Z" fill="#FFEAFA"/>
+                    </svg>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -99,12 +179,12 @@
             <h3>here you are some works</h3>
             <div class="work-content">
                 <div class="works-item">
-                    <a href="#"><img class="works-photo" src="media/case study alpro.jpg"></a>
+                    <a class="works-photo" href="#"><img src="media/case study alpro.jpg"></a>
                     <a class="label" href="#">UX/UI case study - Alpro</a>
                 </div>
                 <div class="works-item">
-                    <a href="#"><img class="works-photo" src="media/case study alpro.jpg"></a>
-                    <a class="label" href="#">UX/UI case study - yarn online store</a>
+                    <a class="works-photo" href="#"><img src="media/case study alpro.jpg"></a>
+                    <a class="label" href="#">UX/UI case study - online yarn store</a>
                 </div>
             </div>
         </div>
@@ -120,16 +200,22 @@
                 <div class="contacts-content-form">
                     <h3>you can use this form below</h3>
                     <form action="">
-                        <label class="form-label" for="">Full name</label>
-                        <input class="input-field" type="text" placeholder="Name Surname">
+                        <div class="input-content">
+                            <label class="form-label" for="fullName">Full name*</label>
+                            <input class="input-field" type="text" placeholder="Name Surname" required id="fullName">
+                        </div>
 
-                        <label class="form-label" for="">E-mail</label>
-                        <input class="input-field" type="email" placeholder="example@email.com">
+                        <div class="input-content">
+                            <label class="form-label" for="eMail">E-mail*</label>
+                            <input class="input-field" type="email" placeholder="example@email.com" required id="eMail">
+                        </div>
 
-                        <label class="form-label" for="">Message</label>
-                        <textarea class="input-textarea" placeholder="Write here"></textarea>
+                        <div class="input-content">
+                            <label class="form-label" for="messageBox">Message*</label>
+                            <textarea class="input-textarea" placeholder="Write here (max 300 characters)" required maxlength="300" id="messageBox"></textarea>
+                        </div>
 
-                        <button class="form-button">Send</button>
+                        <input class="form-button" type="submit" value="Submit">
                     </form>
                     
                 </div>
@@ -152,4 +238,7 @@
             <a href="index.html#Hero">Back to top</a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+</html>
