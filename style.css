@@ -173,7 +173,7 @@ a:hover {
     align-items: center;
 }
 
-.about-content-desktop {
+.about-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -467,36 +467,9 @@ a:hover {
 
 
     /*ABOUT ME*/
-    .about-content-desktop {
-        display: none;
+    .about-item {
+        width: 40%;
     }
-
-    #carouselAbout {
-        display: block;
-        margin-top: 32px;
-        margin-bottom: 72px;
-    }
-
-    .carousel-item {
-        position: relative;
-    }
-
-    .carousel-photo {
-        max-width: 80%;
-        border-radius: 40px;
-    }
-
-    .carousel-caption {
-        background-color: rgba( 0, 0, 0, 0.5);
-        padding-top: 10px;
-        position: absolute;
-        bottom: 4px;
-    }
-
-    .carousel-indicators {
-        padding-bottom: 10px;
-    }
-
 
     /*MY WORKS*/
     .works-container {
@@ -717,9 +690,9 @@ a:hover {
     #menu {
         display: none;
         position: absolute;
-        width: 300px;
-        margin: 30px 0 0 -50px;
-        z-index: 999;
+        width: 100vw;
+        margin-top: 25px;
+        margin-left: 66px;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
@@ -731,8 +704,13 @@ a:hover {
     }
 
     #menu li {
-        padding: 10px 0;
+        padding: 8px 0;
         font-size: 22px;
+    }
+
+    .navitem {
+        margin: 0 0;
+        padding-left: 8px;
     }
 
     #menuToggle input:checked ~ ul {
@@ -769,19 +747,15 @@ a:hover {
 
 
     /*ABOUT ME*/
-
-    .about-content-desktop {
-        display: none;
+    .about-item {
+        width: 100%;
+        margin-bottom: 24px;
     }
 
     .playlist-button {
         font-size: 18px;
         line-height: 21px;
         padding: 8px 32px;
-    }
-
-    #play {
-        display: none;
     }
 
     /*MY WORKS*/
