@@ -9,11 +9,152 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cv.css">
   </head>
 
   <body>
-    <h1>IL MIO CV</h1>
+    <!--NAVIGATION-->
+    <header class="header desktop-navmenu" id="navBar">
+      <div class="header-container">
+          <div class="logo">
+              <a href="index.html#Hero"><img src="media/logo.png" alt="logo" height="60px"></a>
+          </div>
+          <nav class="navbar" role="navigation">
+              <ul>
+                  <li><a href="index.html#AboutMe" class="navitem">ABOUT</a></li>
+                  <li><a href="index.html#MyWorks" class="navitem">MY WORKS</a></li>
+                  <li><a href="index.html#Contacts" class="navitem">CONTACTS</a></li>
+                  <li><a href="cv.html" class="navitem">CV</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+    <!--NAVIGATION MOBILE-->
+    <!--    Made by Erik Terwan 24th of November 2015   -->
+    <header class="header mobile-navmenu" id="navBar">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#Hero"><img src="media/logo.png" alt="logo" height="60px"></a>
+            </div>
+            <nav class="navbar" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <ul id="menu">
+                        <li><a href="#AboutMe" class="navitem">ABOUT</a></li>
+                        <li><a href="#MyWorks" class="navitem">MY WORKS</a></li>
+                        <li><a href="#Contacts" class="navitem">CONTACTS</a></li>
+                        <li><a href="cv.html" class="navitem">CV</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+  
+  <!--CONTENT-->
+   <div class="page">
+    <a id="topPage" class="anchors"></a>
+      <!--TOP ROW-->
+      <div class="top-row">
+        <img src="media/profilo.jpg" alt="profile foto">
+        <div class="top-content">
+          <h1>GIORGIA TAVARILLI</h1>
+          <h2>Junior UX Designer</h2>
+
+          <a href="media/cv_TavarilliGiorgia.pdf" target="_blank">
+            <button class="cta">PDF</button>
+          </a>
+        </div>
+      </div>
+
+      <!--LEFT COLUMN-->
+      <div class="left-col">
+        <div class="section">
+          <h3>Hard skills</h3>
+          <ul>
+            <li>Wireframing (Intermediate)</li>
+            <li>UX Research (Beginner)</li>
+            <li>Figma (Intermediate)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Active listening</li>
+            <li>Visual organization</li>
+            <li>Accuracy</li>
+            <li>Flexibility</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Languages</h3>
+          <ul>
+            <li>Italian (Native)</li>
+            <li>English (Fluent)</li>
+            <li>Spanish (Beginner)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--RIGHT COLUMN-->
+      <div class="right-col">
+        <div class="section">
+          <div class="education">
+            <h3>Education</h3>
+            <h4>UX/UI Master</h4>
+            <p class="label">at Start2Impact University | 2022 - present</p>
+            <ul>
+              <li>Relevant courses: Graphic, UX Research, Wireframing and prototyping, User test, Accessibility</li>
+            </ul>
+          </div>
+          
+          <div class="education">
+            <h4>Tecnico biotecnologico sanitario (chemistry and biotechnologies)</h4>
+            <p class="label">high school diploma | 2014 - 2019</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Work experience</h3>
+          <p>I don't have any relevant work experiences yet.
+            <br>To better my skills, I worked on a couple of case studies in different fields.
+                It helped me have a comprehensive understanding of the job and gain more confidence.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>Volunteering</h3>
+          <h4>Intercultura ODV</h4>
+          <p class="label">since 2018</p>
+          <p>I was a participant in 2017-2018 as an exchange student in Thailand.
+              <br>As a volunteer some of the main activities I take part into are:
+          </p>
+          <ul>
+            <li>Training for participants (logistics and activities)</li>
+            <li>Manage local instagram page</li>
+            <li>Educational activities in schools</li>
+            <li>Support in national activites with participant from all over the world</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container footer-container">
+          <a href="#topPage">Back to top</a>
+          <p class="credits">Designed and coded by me!</p>
+      </div>
+    </footer>
+
   </body>
 
 </html>

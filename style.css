@@ -396,16 +396,22 @@ a:hover {
 .footer {
     background-color: rgba( 255, 255, 255, 0.8);
     padding-top: 16px;
-    padding-bottom: 72px;
+    padding-bottom: 24px;
     display: flex;
 }
 
 .footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.credits {
+    font-size: 14px;
+    color: rgb(183, 183, 183);
+    padding-top: 16px;
+}
 
 @media screen and (max-width: 992px) {
 
