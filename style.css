@@ -621,6 +621,7 @@ a:hover {
     .header-container {
         display: flex;
         justify-content: space-between;
+        padding: 0 24px;
     }
 
     #menuToggle {
@@ -698,7 +699,7 @@ a:hover {
         position: absolute;
         width: 100vw;
         margin-top: 25px;
-        margin-left: 66px;
+        margin-left: 57px;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
