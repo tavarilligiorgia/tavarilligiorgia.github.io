@@ -6,7 +6,7 @@
 }
 
 body {
-    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='%23CFBCF4' cx='50' cy='0' r='50'/%3E%3Cg fill='%23d9bcf1' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3bded' cx='50' cy='100' r='50'/%3E%3Cg fill='%23ebbee9' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f2bfe5' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f8c0e1' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23fdc2de' cx='50' cy='300' r='50'/%3E%3Cg fill='%23ffc5da' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffc7d6' cx='50' cy='400' r='50'/%3E%3Cg fill='%23ffcad3' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffcdd1' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ffd1cf' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffd4cd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ffd8cc' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffdccc' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ffdfcd' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffe3ce' cx='50' cy='800' r='50'/%3E%3Cg fill='%23ffe7d0' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffebd2' cx='50' cy='900' r='50'/%3E%3Cg fill='%23ffeed5' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FFF2D9' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E"); /*credits svgbackgrounds.com*/
+    /*credits: background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='%23CFBCF4' cx='50' cy='0' r='50'/%3E%3Cg fill='%23d9bcf1' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3bded' cx='50' cy='100' r='50'/%3E%3Cg fill='%23ebbee9' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f2bfe5' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f8c0e1' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23fdc2de' cx='50' cy='300' r='50'/%3E%3Cg fill='%23ffc5da' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffc7d6' cx='50' cy='400' r='50'/%3E%3Cg fill='%23ffcad3' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffcdd1' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ffd1cf' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffd4cd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ffd8cc' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffdccc' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ffdfcd' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffe3ce' cx='50' cy='800' r='50'/%3E%3Cg fill='%23ffe7d0' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ffebd2' cx='50' cy='900' r='50'/%3E%3Cg fill='%23ffeed5' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FFF2D9' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E"); /*credits svgbackgrounds.com*/
     background-image: url(media/BACKGROUND.png);
     background-color: rgba(207, 188, 244, 0.5);
     background-size: contain;
@@ -23,21 +23,21 @@ section {
 h1 {
     font-size: 56px;
     font-weight: 500;
-    line-height: 67px; /* 119.643% */
+    line-height: 67px;
     margin-bottom: 16px;
 }
 
 h2 {
     font-size: 45px;
     font-weight: 500;
-    line-height: 54px; /* 120% */
+    line-height: 54px;
     margin-bottom: 16px;
 }
 
 h3{
     font-size: 25px;
     font-weight: 400;
-    line-height: 42px; /* 120% */
+    line-height: 42px;
     margin-bottom: 16px;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .anchors {
-    visibility: hidden;
+    visibility: hidden; /*al click sulla navbar posiziona la sezione in modo che non sia coperta dalla navbar stessa*/
     position: relative;
     top: -90px;
 }
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .logo {
-    align-self: flex-start; /*NON FUNZIONAAAAA*/
+    align-self: flex-start;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 50px;
@@ -106,6 +106,7 @@ a:hover {
 .navbar {
     justify-content: center;
     align-items: center;
+    position: relative; /*proprietà per posizionare la checkbox del navmenu mobile*/
 }
 
 .navbar ul {
@@ -162,10 +163,6 @@ a:hover {
 
 
 /*ABOUT ME*/
-#carouselAbout {
-    display: none;
-}
-
 .about-container {
     display: flex;
     flex-direction: column;
@@ -204,7 +201,7 @@ a:hover {
     color: #FFEAFA;
     font-size: 24px;
     font-weight: 400;
-    line-height: 29px; /* 120.833% */
+    line-height: 29px;
     text-transform: lowercase;
     padding: 8px 32px;
     border: none;
@@ -282,6 +279,7 @@ a:hover {
     margin-right: 10px;
 }
 
+
 /* CONTACTS */
 .contacts-container {
     display: flex;
@@ -310,7 +308,6 @@ a:hover {
 .input-content {
     width: 100%;
 }
-
 
 .input-field {
     height: 40px;
@@ -392,6 +389,7 @@ a:hover {
     border-radius: 20px;
 }
 
+
 /*FOOTER*/
 .footer {
     background-color: rgba( 255, 255, 255, 0.8);
@@ -412,6 +410,7 @@ a:hover {
     color: rgb(183, 183, 183);
     padding-top: 16px;
 }
+
 
 @media screen and (max-width: 992px) {
 
@@ -443,9 +442,7 @@ a:hover {
     }
 
     .anchors {
-        visibility: hidden;
-        position: relative;
-        top: -160px;
+        top: -100px;
     }
 
 
@@ -476,6 +473,7 @@ a:hover {
     .about-item {
         width: 40%;
     }
+
 
     /*MY WORKS*/
     .works-container {
@@ -603,14 +601,9 @@ a:hover {
         font-size: 20px;
     }
 
-    .anchors {
-        visibility: hidden;
-        position: relative;
-        top: -100px;
-    }
 
     /* NAVIGATION */
-    .desktop-navmenu {
+   .desktop-navmenu {
         display: none;
     }
    
@@ -711,7 +704,7 @@ a:hover {
     }
 
     #menu li {
-        padding: 8px 0;
+        padding: 8px 16px;
         font-size: 22px;
     }
 
@@ -724,6 +717,7 @@ a:hover {
         display: block;
         background: rgba( 255, 255, 255, 0.9);
     }
+
 
     /* HERO */
     .hero {
@@ -764,6 +758,7 @@ a:hover {
         line-height: 21px;
         padding: 8px 32px;
     }
+
 
     /*MY WORKS*/
     .works-container {

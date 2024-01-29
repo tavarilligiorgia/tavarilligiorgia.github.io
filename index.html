@@ -1,22 +1,46 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Giorgia Tavarilli</title>
-    <link rel="icon" href="media/logo.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!--icon library--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta property="og:title" content="Giorgia Tavarilli - portfolio">
-    <meta property="og:type" content="portfolio">
-    <meta property="og:img" content="media/profilo.jpg">
-    <meta property="og:url" content="https://tavarilligiorgia.github.io/">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Giorgia Tavarilli</title>
+        <link rel="icon" href="media/logo.svg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!--icon library--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta property="og:title" content="Giorgia Tavarilli - portfolio">
+        <meta property="og:type" content="portfolio">
+        <meta property="og:img" content="https://tavarilligiorgia.github.io/#Hero">
+        <meta property="og:url" content="https://tavarilligiorgia.github.io/">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('KSTOfJmV2QzTTQMBT');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_v1kfikq', 'template_lz5k5of', this)
+                        .then(function() {
+                            alert('Messaggio inviato correttamente')
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            alert('Errore')
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+    </head>
 
   <body>
 
@@ -132,12 +156,16 @@
             <h3>here you are some works</h3>
             <div class="work-content">
                 <div class="works-item">
-                    <a class="works-photo" href="#"><img src="media/case study alpro.jpg"></a>
-                    <a class="label" href="#">UX/UI case study - Alpro</a>
+                    <a class="works-photo" href="#"><img src="media/cs_Alpro_cover.jpg"></a>
+                    <a class="label" href="pdf/cs_Alpro.pdf" target="_blank">UX/UI case study - Alpro (ITA)</a>
                 </div>
                 <div class="works-item">
-                    <a class="works-photo" href="#"><img src="media/case study alpro.jpg"></a>
-                    <a class="label" href="#">UX/UI case study - online yarn store</a>
+                    <a class="works-photo" href="#"><img src="media/cs_yarnstore_cover.jpg"></a>
+                    <a class="label" href="pdf/cs_YarnStore.pdf">UX/UI case study - online yarn store (ITA)</a>
+                </div>
+                <div class="works-item">
+                    <a class="works-photo" href="#"><img src="media/cs_ComingSoon.png"></a>
+                    <a class="label" href="#">Travel app design - coming soon</a>
                 </div>
             </div>
         </div>
@@ -152,7 +180,9 @@
             <div class="contacts-content">
                 <div class="contacts-content-form">
                     <h3>you can use this form below</h3>
-                    <form action="">
+                    <form id="contact-form" action="" method="post">
+                        
+            <input type="hidden" name="contact_number">
                         <div class="input-content">
                             <label class="form-label" for="fullName">Full name*</label>
                             <input class="input-field" type="text" placeholder="Name Surname" required id="fullName">
@@ -178,7 +208,7 @@
                         <a href="https://www.linkedin.com/in/giorgiatavarilli" target="_blank"><img class="social-icon" src="media/linkedin.png" alt="linkedin profile"></a> <!--source flaticon-->
                         <a href="https://instagram.com/gio_tava?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="social-icon" src="media/instagram.png" alt="instagram profile"></a> <!--source flaticon-->
                         <a href="https://github.com/tavarilligiorgia" target="_blank"><img class="social-icon" src="media/github.png" alt="github profile"></a> <!--source flaticon-->
-                        <a href="#" target="_blank"><img class="social-icon" src="media/behance.png" alt="behance profile"></a> <!--source flaticon-->
+                        <a href="https://www.behance.net/giorgiatavarilli" target="_blank"><img class="social-icon" src="media/behance.png" alt="behance profile"></a> <!--source flaticon-->
                     </div>
                 </div>
             </div>
