@@ -185,17 +185,17 @@
             <input type="hidden" name="contact_number">
                         <div class="input-content">
                             <label class="form-label" for="fullName">Full name*</label>
-                            <input class="input-field" type="text" placeholder="Name Surname" required id="fullName">
+                            <input class="input-field" type="text" placeholder="Name Surname" required id="fullName" name="from_name">
                         </div>
 
                         <div class="input-content">
                             <label class="form-label" for="eMail">E-mail*</label>
-                            <input class="input-field" type="email" placeholder="example@email.com" required id="eMail">
+                            <input class="input-field" type="email" placeholder="example@email.com" required id="eMail" name="user_email">
                         </div>
 
                         <div class="input-content">
                             <label class="form-label" for="messageBox">Message*</label>
-                            <textarea class="input-textarea" placeholder="Write here (max 300 characters)" required maxlength="300" id="messageBox"></textarea>
+                            <textarea class="input-textarea" placeholder="Write here (max 300 characters)" required maxlength="300" id="messageBox" name="message"></textarea>
                         </div>
 
                         <input class="form-button" type="submit" value="Submit">
