@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(media/background_img.png);
+    background-image: url(assets/pics/background_img.png);
     background-color: rgba(207, 188, 244, 0.5);
     background-size: cover;
     background-attachment: fixed;
